@@ -131,7 +131,7 @@ a {
 .our-services {
     background: url('./images/woodgrain-bg.jpeg');
     background-size: contain;
-    padding-top: 63px;
+    padding: 63px 0;
 }
 
 .cms-content {
@@ -246,4 +246,39 @@ a {
     position: relative;
     opacity: 0;
     transition: opacity .35s;
+}
+
+footer {
+    background-color: #222427;
+    color: #ececec;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 125px;
+}
+
+.copy {
+    font-size: 12px;
+}
+
+.copy p {
+    color: rgb(148, 148, 148);
+    margin-top: 40px;
+}
+
+.copy a {
+    color: #446286;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.footer-social-icons a {
+    margin-left: 20px;
 }
