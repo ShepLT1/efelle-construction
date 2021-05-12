@@ -209,6 +209,11 @@ a {
     margin-bottom: 85px;
 }
 
+.overlay:hover .caption, .overlay:hover a {
+    transition: opacity .65s;
+    opacity: 1;
+}
+
 .title {
     display: flex;
     flex-direction: column;
@@ -232,9 +237,13 @@ a {
 .caption {
     padding: 0 20px;
     width: 260px;
+    opacity: 0;
+    transition: opacity .35s;
 }
 
 .overlay a {
     color: #88b9f5;
     position: relative;
+    opacity: 0;
+    transition: opacity .35s;
 }
