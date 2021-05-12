@@ -4,6 +4,11 @@ body {
     margin: 0;
 }
 
+a {
+    color: #222427;
+    text-decoration: none;
+}
+
 button {
     font-family: 'Roboto', sans-serif;
 }
@@ -11,7 +16,7 @@ button {
 #page {
     display: flex;
     flex-direction: column;
-    padding-top: 84px;
+    padding-top: 70px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -25,6 +30,9 @@ button {
     top: 0;
     padding-right: 7.5%;
     padding-left: 7.5%;
+    background: url('images/woodgrain-bg.jpeg');
+    background-size: cover;
+    height: 70px;
 }
 
 .header-wrapper {
@@ -35,21 +43,38 @@ button {
 }
 
 .nav-logo img {
-    width: 140px;
+    width: 120px;
 }
 
 .header-right {
-    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 500px;
 }
 
 .header-phone-number p {
+    font-size: 11px;
     text-align: right;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+.main-menu {
+    width: 100%;
 }
 
 .efelle-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 10px;
+    list-style-type: none;
+}
+
+.efelle-menu a:hover {
+    color: #446286;
 }
 
 .homepage-masthead {
