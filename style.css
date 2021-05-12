@@ -186,6 +186,7 @@ a {
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: #fafafa;
     background-color: #2224277c;
     transition: width .5s, height .5s, border-radius .5s, background-color .5s;
@@ -230,6 +231,7 @@ a {
 
 .caption {
     padding: 0 20px;
+    width: 260px;
 }
 
 .overlay a {
