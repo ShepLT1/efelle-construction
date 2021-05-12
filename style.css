@@ -3,7 +3,6 @@ body {
 }
 
 a {
-    color: #333;
     text-decoration: none;
 }
 
@@ -65,6 +64,10 @@ a {
     justify-content: space-between;
     list-style-type: none;
     font-size: 14px;
+}
+
+.efelle-menu a {
+    color: #333;
 }
 
 .efelle-menu a:hover {
@@ -154,10 +157,82 @@ a {
 }
 
 .cms-line {
-    width: 28px;
+    width: 30px;
     border-bottom: 1px solid #222427;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.service-block-wrapper {
+    margin: 15px;
+}
+
+.service-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 315px;
+    overflow: hidden;
+}
+
+.overlay {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fafafa;
+    background-color: #2224277c;
+    transition: width .5s, height .5s, border-radius .5s, background-color .5s;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.overlay:hover {
+    transition: width .5s, height .5s, border-radius .5s, background-color .5s;
+    width: 315px;
+    height: 350px;
+    border-radius: 0;
+    background-color: #222427b2;
+}
+
+.overlay:hover .title {
+    transition: margin-bottom .5s;
+    margin-bottom: 85px;
+}
+
 .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Teko', sans-serif;
+    font-size: 170%;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 0;
+    transition: margin-bottom .5s;
+    margin-bottom: 250px;
+    position: relative;
+    top: 75px;
+}
+
+.title-line {
+    border-bottom: 2px #fafafa solid;
+    width: 32px;
+}
+
+.caption {
+    padding: 0 20px;
+}
+
+.overlay a {
+    color: #88b9f5;
+    position: relative;
 }
