@@ -72,7 +72,8 @@ a {
 }
 
 .homepage-masthead {
-    background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('images/banner.jpg');
+    /* background looks better if vertically centered, but I kept it with a top alignment to match the example */
+    background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('images/banner.jpg') top center;
     background-size: cover;
     height: 530px;
     display: flex;
