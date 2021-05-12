@@ -44,7 +44,7 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
-    width: 650px;
+    width: 700px;
 }
 
 .header-phone-number p {
@@ -63,7 +63,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 
