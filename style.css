@@ -45,6 +45,7 @@ a {
     justify-content: space-around;
     align-items: flex-end;
     width: 700px;
+    margin-left: 25px;
 }
 
 .header-phone-number p {
@@ -56,6 +57,15 @@ a {
 
 .main-menu {
     width: 100%;
+}
+
+.mobile-nav {
+    visibility: hidden;
+    position: absolute;
+    right: 5%;
+    top: 25px;
+    color: #2e3d4d;
+    font-size: 42.5px;
 }
 
 .efelle-menu {
@@ -79,13 +89,17 @@ a {
     /* background looks better if vertically centered, but I kept it with a top alignment to match the example */
     background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('images/banner.jpg') top center;
     background-size: cover;
-    height: 815px;
+    height: calc(100vh - 100px);
     display: flex;
     align-items: center;
 }
 
+.masthead-wrapper {
+    width: 100%;
+}
+
 .masthead-text {
-    margin-left: 125px;
+    margin-left: 9%;
     color:#fafafa;
     text-shadow: -2px 0 20px rgb(0, 0, 0);
 }
@@ -132,13 +146,15 @@ a {
 .our-services {
     background: url('./images/woodgrain-bg.jpeg');
     background-size: contain;
-    padding: 63px 0;
+    padding-top: 63px;
+    padding-bottom: 50px;
 }
 
 .cms-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 15px;
 }
 
 .cms-content p {
@@ -252,13 +268,15 @@ a {
 footer {
     background-color: #222427;
     color: #ececec;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
 }
 
 .footer-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 125px;
+    margin: 20px;
 }
 
 .copy {
@@ -282,4 +300,132 @@ footer {
 
 .footer-social-icons a {
     margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .FixedTop, footer {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main-menu {
+        visibility: hidden;
+    }
+
+    .header-phone-number {
+        visibility: hidden;
+    }
+
+    .mobile-nav {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .FixedTop {
+        height: 75px;
+    }
+
+    #page {
+        padding-top: 75px;
+    }
+
+    .homepage-masthead {
+        height: calc(100vh - 75px);
+    }
+
+    .nav-logo img {
+        width: 135px;
+    }
+
+    .mobile-nav {
+        top: 15px;
+        font-size: 37.5px;
+        right: 25px;
+    }
+
+    .FixedTop, footer {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+    .masthead-text {
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .masthead-text h2 {
+        font-size: 350%;
+    }
+    
+    .masthead-text h5 {
+        font-size: 218%;
+    }
+    
+    .masthead-text p {
+        margin: 20px 0;
+    }
+    
+    .masthead-text span {
+        font-size: 100%;
+    }
+
+    .our-services {
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+    
+    .cms-content span {
+        font-size: 115%;
+    }
+    
+    .cms-content h1 {
+        font-size: 175%;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .masthead-text h5 {
+        font-size: 200%;
+    }
+
+    .our-services {
+        padding-top: 25px;
+        padding-bottom: 0;
+    }
+
+    .service-block {
+        height: 325px;
+        width: 296px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-row {
+        justify-content: center;
+    }
+
+    .copy p {
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+
+    .phone p {
+        margin-top: 12px;
+    }
+
+    .footer-social-icons {
+        justify-content: space-around;
+        margin: 16px 0;
+    }
+
+    .footer-social-icons a {
+        margin-left: 0;
+    }
 }
