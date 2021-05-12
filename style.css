@@ -1,6 +1,4 @@
 body {
-    background: url('./images/woodgrain-bg.jpeg') center center fixed;
-    background-size: cover;
     margin: 0;
 }
 
@@ -30,7 +28,7 @@ button {
     top: 0;
     padding-right: 7.5%;
     padding-left: 7.5%;
-    background: url('images/woodgrain-bg.jpeg');
+    background: url('images/header-bg.jpeg');
     background-size: cover;
     height: 70px;
 }
@@ -81,13 +79,18 @@ button {
     background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('images/banner.jpg');
     background-size: cover;
     height: 530px;
-    margin-bottom: 35px;
     display: flex;
     align-items: center;
 }
 
 .masthead-text {
     margin-left: 80px;
+}
+
+.our-services {
+    background: url('./images/woodgrain-bg.jpeg');
+    background-size: contain;
+    padding-top: 35px;
 }
 
 .title {
