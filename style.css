@@ -7,10 +7,6 @@ a {
     text-decoration: none;
 }
 
-button {
-    font-family: 'Roboto', sans-serif;
-}
-
 #page {
     display: flex;
     flex-direction: column;
@@ -85,6 +81,47 @@ button {
 
 .masthead-text {
     margin-left: 80px;
+    margin-bottom: 5px;
+    color:#fafafa;
+    text-shadow: -2px 0 10px rgb(0, 0, 0);
+}
+
+.masthead-text h2 {
+    font-size: 275%;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.masthead-text h5 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 170%;
+    margin: 0;
+    font-weight: 500;
+}
+
+.masthead-text p {
+    margin: 12px 0;
+}
+
+.masthead-text span {
+    font-size: 73%;
+}
+
+.masthead-text button {
+    font-family: 'Roboto', sans-serif;
+    color: #fafafa;
+    padding: 11px 35px;
+    border: none;
+    font-size: 53%;
+    background-color: #446286;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.masthead-line {
+    width: 47.5px;
+    border-bottom: 1px solid #fafafa;
+    opacity: .5;
 }
 
 .our-services {
