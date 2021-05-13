@@ -13,6 +13,7 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Header */
 .FixedTop {
     position: fixed;
     display: flex;
@@ -59,6 +60,7 @@ a {
     width: 100%;
 }
 
+/* Mobile nav, hidden on computer view */
 .mobile-nav {
     visibility: hidden;
     position: absolute;
@@ -68,6 +70,7 @@ a {
     font-size: 42.5px;
 }
 
+/* Nav menu */
 .efelle-menu {
     display: flex;
     flex-direction: row;
@@ -100,6 +103,7 @@ a {
     transform: scaleX(1);
 }
 
+/* Main banner */
 .homepage-masthead {
     /* background looks better if vertically centered, but I kept it with a top alignment to match the example */
     background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('images/banner.jpg') top center;
@@ -167,6 +171,7 @@ a {
     border-bottom: 1px solid #fafafa;
 }
 
+/* Services container */
 .our-services {
     background: url('./images/woodgrain-bg.jpeg');
     background-size: contain;
@@ -202,7 +207,7 @@ a {
     border-bottom: 1px solid #222427;
 }
 
-.row {
+.services-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -223,6 +228,7 @@ a {
     overflow: hidden;
 }
 
+/* Service block overlay */
 .overlay {
     text-align: center;
     display: flex;
@@ -255,6 +261,7 @@ a {
     opacity: 1;
 }
 
+/* Overlay title */
 .title {
     display: flex;
     flex-direction: column;
@@ -275,6 +282,7 @@ a {
     width: 32px;
 }
 
+/* Overlay description */
 .caption {
     padding: 0 20px;
     width: 255px;
